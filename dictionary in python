@@ -1,0 +1,47 @@
+"""A Dictionary is an unordered collection of items while other compound data types have only value as an element,
+a dictionary has a key: value pair"""
+my_dict =  {'Name':'satish', 1: ['abc', 'xyz']}
+squares = {2:4, 3:9, 4:16}
+print(my_dict)
+# dict access
+print(my_dict['Name'])
+print(my_dict.get('Name'))
+# dict add or modify
+# update
+my_dict['Name'] = 'raju'
+print(my_dict)
+# remove particular item
+print(my_dict.pop(1))
+print(my_dict)
+# delete
+del squares[2]
+print(squares)
+# clear the dict
+squares.clear()
+print(squares)
+# dict methods
+# copy
+my_dict = squares.copy()
+print(my_dict)
+# fromkeys
+subjects = {}.fromkeys(['english', 'maths', 'marathi'],0)
+print(subjects)
+# item
+print(subjects.items())
+# keys
+print(subjects.keys())
+# values
+print(subjects.values())
+# list all available methods on dictionary
+d = {}
+print(dir(d))
+# dict comprehension
+di = {'a':1, 'b':2, 'c':3, 'd':4}
+for pair in di.items():
+    print(pair)
+# creating a new dict with only pairs where the value is greater than 2
+new_dict = {k:v for k, v in di.items() if v>2}
+print(new_dict)
+# we can also peform actions on key value pairs
+di = {k + 'c':v*2 for k, v in di.items() if v>2}
+print(di)
