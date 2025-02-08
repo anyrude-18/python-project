@@ -1,0 +1,8 @@
+#in python 0, none, false is considered as false rest is true (-1,1)
+num = 10
+if num > 0:
+     print("Number is positive");
+elif num == 0:
+     print("Number is equal to 0");
+else:
+    print("Number is negative");
