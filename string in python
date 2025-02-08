@@ -1,0 +1,18 @@
+"""a string is a sequence of characters """
+# how to create a string
+myString = 'hello'
+myString = "hello"
+myString = '''hello'''
+print(myString, myString, myString)
+# how to access string
+print(myString[0])
+print(myString[-1])
+print(myString[2:5])
+# how to change  or delete a string
+"""string are immutable which means that element of a string cannot be changed after the value is assigned"""
+del myString
+# string operations
+s1 = 'satya'
+s2 = 'ramya'
+print(s1 + s2)
+print(s1 * 3, s2 * 2)
